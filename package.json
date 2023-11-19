@@ -1,0 +1,39 @@
+{
+  "name": "@babybeet/eslint-config-base-with-jest",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": {
+    "name": "Baby Beet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/babybeet/eslint-config-base-with-jest"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node make-config.js",
+    "check-code-styles": "prettier --check \"(*.js|*.json|*.md)\"",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@babybeet/eslint-config-base": "^1.0.2",
+    "eslint-plugin-jest": "^27.6.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0"
+  },
+  "lint-staged": {
+    "**/*.{json,md,js}": [
+      "prettier -w --cache"
+    ]
+  }
+}

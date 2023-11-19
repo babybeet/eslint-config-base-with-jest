@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc.json",
+  "extends": "@babybeet/eslint-config-base",
+  "env": {
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"],
+
+      "rules": {
+        "jest/valid-title": [
+          "error",
+          {
+            "ignoreTypeOfDescribeName": true
+          }
+        ],
+        "jest/expect-expect": [
+          "error",
+          {
+            "assertFunctionNames": [
+              "expect",
+              "request.*.expect",
+              "request.**.expect",
+              "request.*.expect*",
+              "get(*).expect",
+              "post(*).expect",
+              "put(*).expect",
+              "delete(*).expect",
+              "sendGetRequest(*).expect",
+              "sendGetRequest(*).*.expect",
+              "sendPostRequest(*).expect",
+              "sendPostRequest(*).*.expect",
+              "sendPutRequest(*).expect",
+              "sendPutRequest(*).*.expect",
+              "sendDeleteRequest(*).expect",
+              "sendDeleteRequest(*).*.expect"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
