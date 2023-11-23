@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@babybeet/eslint-config-base':
-    specifier: ^1.0.2
-    version: 1.0.2(typescript@5.2.2)
+    specifier: ^1.0.5
+    version: 1.0.5(typescript@5.2.2)
   eslint-plugin-jest:
     specifier: ^27.6.0
     version: 27.6.0(@typescript-eslint/eslint-plugin@6.11.0)(eslint@8.54.0)(typescript@5.2.2)
@@ -37,8 +37,8 @@ packages:
       regenerator-runtime: 0.14.0
     dev: false
 
-  /@babybeet/eslint-config-base@1.0.2(typescript@5.2.2):
-    resolution: {integrity: sha512-uC4OgQF3n7ogJQqlJnb5J7FTcPj2fxbAaqRih8vVYBVKATap/+U0nTO5rfVHmCuVaFwj+1izp7mI8Q1ILojF1w==}
+  /@babybeet/eslint-config-base@1.0.5(typescript@5.2.2):
+    resolution: {integrity: sha512-VtOYY9NsUWkQcm54QnC8d/WfTWErdmIsws3ljj+ku5gXtt1+mganLmYiwNxGKtlwEiYgJxak/IE+Q03HDjhKqg==}
     dependencies:
       '@stylistic/eslint-plugin': 1.4.0(eslint@8.54.0)(typescript@5.2.2)
       '@typescript-eslint/eslint-plugin': 6.11.0(@typescript-eslint/parser@6.11.0)(eslint@8.54.0)(typescript@5.2.2)

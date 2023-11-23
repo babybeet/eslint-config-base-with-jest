@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/babybeet/eslint-config-base-with-jest"
+    "url": "git+https://github.com/babybeet/eslint-config-base-with-jest"
   },
   "exports": {
     ".": "./index.js",
@@ -16,6 +16,16 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "eslint",
+    "eslint config",
+    "eslint typescript",
+    "eslint typescript javascript",
+    "eslint node",
+    "eslint jest typescript",
+    "eslint jest node",
+    "eslint jest"
+  ],
   "scripts": {
     "build": "node make-config.js",
     "check-code-styles": "prettier --check \"(*.js|*.json|*.md)\"",
@@ -23,7 +33,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@babybeet/eslint-config-base": "^1.0.2",
+    "@babybeet/eslint-config-base": "^1.0.5",
     "eslint-plugin-jest": "^27.6.0"
   },
   "devDependencies": {
