@@ -33,7 +33,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@babybeet/eslint-config-base": "^1.0.5",
+    "@babybeet/eslint-config-base": "^1.0.7",
     "eslint-plugin-jest": "^27.6.0"
   },
   "devDependencies": {
@@ -42,7 +42,7 @@
     "prettier": "^3.1.0"
   },
   "lint-staged": {
-    "**/*.{json,md,js}": [
+    "**/*.{js,json,md,yaml,yml}": [
       "prettier -w --cache"
     ]
   }
